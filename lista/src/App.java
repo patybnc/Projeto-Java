@@ -8,7 +8,7 @@ public class App {
         
         ArrayList<Integer> lista  = new ArrayList<>(5);              
 
-        System.out.println("Inserindo os números 1,2,3,4,5 na lista");
+        System.out.println("Inserindo os números 1,2,3,4,5 na lista.");
 
         lista.add(1);
         lista.add(2);
@@ -18,17 +18,16 @@ public class App {
 
         System.out.println(lista);
         System.out.println("---------------------------------------------------------");
-        System.out.println("Removendo os dados da célula inicial da lista");
+        System.out.println("Removendo os dados da célula inicial da lista.");
 
         while (!lista.isEmpty()) {
         lista.remove(0);
-
-            System.out.println(lista);
+            System.out.println(lista);            
         }
             System.out.println("Lista vazia!");
             System.out.println("-----------------------------------------------------");
 
-            System.out.println("Inserindo os dados da lista na pilha");
+            System.out.println("Inserindo os dados da lista na pilha.");
             ArrayDeque<Integer> pilha  = new ArrayDeque<>(5);
             
             pilha.push(1);
@@ -39,7 +38,7 @@ public class App {
 
             System.out.println(pilha);
             System.out.println("------------------------------------------------------");
-            System.out.println("Remove os dados da pilha");
+            System.out.println("Remove os dados da pilha. ");
 
             pilha.clear();
 
@@ -48,26 +47,31 @@ public class App {
 
             while (!pilha.isEmpty()) {
                 pilha.pop();
-                System.out.println(pilha);
+                System.out.println(pilha);                
             }
-                System.out.println("Inserindo os dados da pilha na fila");
+                System.out.println("Inserindo os dados da pilha na fila. ");
                 ArrayDeque<Integer> fila  = new ArrayDeque<>(10);
 
                 fila.add(1);
                 fila.add(2);
                 fila.add(3);
                 fila.add(4);
-                fila.add(5);
+                fila.add(5);      
+                //fila.add(0);
                //fila.add(0);
                 //fila.add(0);
-               // fila.add(0);
-               // fila.add(0);
-               // fila.add(0);
+                //fila.add(0);
+               //fila.add(0);        
 
                 System.out.println(fila);
                 System.out.println("-------------------------------------------------------");
-                System.out.println("Adicionando os números 6,7,8,9,10 na lista");
+                System.out.println("Adicionando os números 6,7,8,9,10 na lista. ");
 
+                //lista.add(0);
+                //lista.add(0);
+                //lista.add(0);
+                //lista.add(0);
+                //lista.add(0);
                 lista.add(6);
                 lista.add(7);
                 lista.add(8);
@@ -76,15 +80,16 @@ public class App {
 
                 System.out.println(lista);
                 System.out.println("-------------------------------------------------------");
-                System.out.println("Removendo os dados das células iniciais da lista");
+                System.out.println("Removendo os dados das células iniciais da lista.");
 
                 while (!lista.isEmpty()) {
                     lista.remove(0);
                     System.out.println(lista);
+                    System.out.printf("Lista: %s\nPilha: %s\nFila: %s\n\n", lista, pilha, fila);
                 }
                     System.out.println("Lista vazia");                    
                     System.out.println("-------------------------------------------------------");
-                    System.out.println("Inserindo os dados da lista na pilha");
+                    System.out.println("Inserindo os dados da lista na pilha.");
 
                     pilha.push(6);
                     pilha.push(7);
@@ -94,19 +99,14 @@ public class App {
 
                     System.out.println(pilha);
                     System.out.println("-------------------------------------------------------");
-                    System.out.println("Removendo os dados da pilha");
+                    System.out.println("Removendo os dados da pilha.");
 
                     pilha.clear();
 
                     System.out.println(pilha);
                     System.out.println("-------------------------------------------------------");
-                    System.out.println("Inserindo os dados da pilha na fila");
+                    System.out.println("Inserindo os dados da pilha na fila.");
 
-                   //fila.add(0);
-                    //fila.add(0);
-                    //fila.add(0);
-                    //fila.add(0);
-                  //fila.add(0);
                     fila.add(6);
                     fila.add(7);
                    fila.add(8);
